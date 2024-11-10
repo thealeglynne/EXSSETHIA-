@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/**/
 @font-face {
   font-family: 'MyFont';
   src: url('../public//fonts/akira_expanded/Akira\ Expanded\ Demo.otf') format('woff2'),
@@ -10,6 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MyFont2';
   src: url('../public/fonts/garet/Garet-Book.otf') format('woff2'),
@@ -19,7 +20,7 @@
 }
 
 body{
-  font-family: 'MyFont', sans-serif;
+ 
   background-color: aqua;
   display: flex;
   align-items: center;

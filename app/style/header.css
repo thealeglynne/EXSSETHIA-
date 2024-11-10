@@ -26,13 +26,35 @@
 }
 
 .nav {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  border-radius: 5px;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden;
+  transition: opacity 1s ease, transform 1s ease, visibility 1s ease;
+  text-align: center; /* Centra los elementos de texto */
+}
+
+.nav.open {
   display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   padding: 20px;
 }
 
@@ -40,7 +62,9 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1rem;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .nav-item:hover {
@@ -48,19 +72,28 @@
 }
 
 .menu-toggle {
-  display: none;
+  display: flex;
   flex-direction: column;
   cursor: pointer;
+
 }
 
 .menu-icon {
-  width: 20px;
-  height: 1px;
+  width: 30px;
+  height: 2.5px;
   background-color: white;
   margin: 4px 0;
+  z-index: 78881111;
+  
 }
 
-/* Botón "Registrarse" */
+.inputSearsh {
+  position: relative;
+  left: 24%;
+  top: 17px;
+  
+}
+
 .register-button {
   background-color: #007bff;
   color: white;
@@ -69,6 +102,7 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+ 
 }
 
 .register-button:hover {
@@ -76,33 +110,23 @@
   transition: 1s;
   color: aliceblue;
 }
-.register-button{
+
+.register-button {
   background-color: white;
   color: black;
   transition: 1s;
+ 
+ 
 }
-/* Estilos para pantallas pequeñas */
-@media (max-width: 850px) {
+
+/* Estilos para menú desplegable en todas las pantallas */
+@media (min-width: 0px) {
   .nav {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    border-radius: 5px;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(-20px);
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    display: none;
   }
 
   .nav.open {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    display: flex;
   }
 
   .nav-list {
@@ -120,4 +144,5 @@
   .menu-toggle {
     display: flex;
   }
+ 
 }

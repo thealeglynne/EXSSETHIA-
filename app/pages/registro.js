@@ -1,11 +1,11 @@
-// app/registro/page.jsx o pages/registro.js
+import SearchInput from '../componentes/SearchInput';
 
-import React from 'react';
 
 export default function Registro() {
   return (
     <div>
       <h1>Registro de Usuario</h1>
+      <SearchInput />
       {/* Formulario completo de registro aquí */}
       <form>
         <label>Nombre:</label>

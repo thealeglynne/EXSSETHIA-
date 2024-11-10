@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 @font-face {
   font-family: 'MyFont2';
   src: url('/APP//public//fonts/garet/Garet-Book.ttf') format('woff2'),
@@ -9,7 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+*/
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;

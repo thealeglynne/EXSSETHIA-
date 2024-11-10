@@ -4,7 +4,9 @@ import Cards from "../componentes/cards"
 import Carrucel from "../componentes/carrucel"
 import CardProduct from "../componentes/CardProduct"
 import VideoP from "../componentes/videoP"
+import SearchBar from "../componentes/SearchBar"
 export default function Home() {
+
   return (
    
  
@@ -20,11 +22,16 @@ export default function Home() {
       <p className="description">
         Exclusividad al alcance, diseño con identidad  </p>
     </div>
+
+   
+
+
     <div className="image-section">
       <img src="https://i.pinimg.com/originals/65/86/43/658643a0c319dea11fcaa3a18339be0e.gif" alt="Ecommerce" />
     </div>
   </div>
     </div>
+    
     <div className="main2">
     <Cards />
     </div>
@@ -40,9 +47,7 @@ export default function Home() {
     <Carrucel />
     </div>
   
-    <div className="main1">
-      <h1>hola mundo</h1>
-    </div>
+   
     <div className="main1">
       <h1>hola mundo</h1>
     </div>
