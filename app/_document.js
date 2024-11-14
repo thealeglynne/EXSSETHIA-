@@ -4,7 +4,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 import "./globals.css"
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Lastica&display=swap" rel="stylesheet" />
       </Head>

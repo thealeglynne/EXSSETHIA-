@@ -18,9 +18,9 @@ export default function Home() {
      <div className="content">
     <div className="text-section">
    
-      <h1 className="title">Exssethia</h1>
+      <h1 className="title">Exsetia</h1>
       <p className="description">
-        Exclusividad al alcance, diseño con identidad  </p>
+      Exclusividad al alcance, diseño con identidad.  </p>
     </div>
 
    
