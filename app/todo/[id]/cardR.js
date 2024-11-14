@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Importar el hook useRouter para navegación
-import "../style/CardProduct.css";
+import "../[id]/cardR.css";
 
 const CardsR = () => {
   const [categories, setCategories] = useState([]);
@@ -17,7 +17,7 @@ const CardsR = () => {
         setCategories(data);
         const initialVisibleProducts = {};
         data.forEach(category => {
-          initialVisibleProducts[category.name] = 4;
+          initialVisibleProducts[category.name] = 50;
         });
         setVisibleProducts(initialVisibleProducts);
       })

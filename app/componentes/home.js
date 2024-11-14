@@ -1,4 +1,6 @@
+'use client'
 import Head from 'next/head'
+import React, { useState, useEffect } from 'react';
 import styles from '../style/home.css'
 import Cards from "../componentes/cards"
 import Carrucel from "../componentes/carrucel"
@@ -6,7 +8,20 @@ import CardProduct from "../componentes/CardProduct"
 import VideoP from "../componentes/videoP"
 import SearchBar from "../componentes/SearchBar"
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    const loadData = async () => {
+      // Aquí puedes hacer cualquier operación asíncrona, como cargar productos
+      setIsLoading(false);
+    };
+
+    loadData();
+  }, []);
+
+  if (isLoading) {
+    return <div>Cargando...</div>; // Muestra un mensaje de carga mientras se cargan los datos
+  }
   return (
    
  
