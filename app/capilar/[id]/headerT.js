@@ -1,9 +1,9 @@
-"use client";
+'use client';
 import { useRouter } from 'next/navigation';  // useRouter de next/navigation
 import React, { useState } from 'react';
-import '../style/header.css';  
-import LoginPopup from "../componentes/loginPopUp";
-import SearchBar from "../componentes/SearchBar";
+import '../[id]/headerT.css';  
+import LoginPopup from "../[id]/logipopUpT";
+import SearchBar from "../[id]/searchBarT";
 
 export default function Header() {
   const router = useRouter();  // useRouter de next/navigation
@@ -17,18 +17,10 @@ export default function Header() {
     setIsLoginOpen(!isLoginOpen);
   };
 
-  const handleLogoClick = () => {
-    console.log("Logo clicked!"); // Asegúrate de que este mensaje se imprima en la consola
-    // Redirige al home cuando se hace clic en el logo o el nombre
-    router.push('/');
-  };
-
-
   const handleViewMore = () => {
     // Redirige a la página de todo con un id específico, por ejemplo '1'
     router.push('/todo/1');  // Puedes cambiar '1' por cualquier id dinámico
   };
-
   const handleViewCapilar = () => {
     // Redirige a la página dinámica de cuidado capilar con un id específico
     router.push('/capilar/1');  // Cambia '1' por el id dinámico según sea necesario
@@ -51,7 +43,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo-container" onClick={handleLogoClick}>
+      <div className="logo-container">
         <img src="https://i.pinimg.com/564x/60/fe/1f/60fe1fea1ce51ea908460990f0cda709.jpg" alt="Logo" className="logo" />
         <h1 className="title2">Exsetia</h1>
       </div>

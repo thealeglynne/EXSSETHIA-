@@ -3,23 +3,27 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'; // Importar el hook useRouter para navegación
 import "../[id]/cardR.css";
 
-
 const CardsR = () => {
   const [categories, setCategories] = useState([]);
   const [sortOrder, setSortOrder] = useState('name');
   const [visibleProducts, setVisibleProducts] = useState({});
-
+  
   const router = useRouter(); // Inicializar el router
-
+  
   useEffect(() => {
     fetch('/categories.json')
       .then(response => response.json())
       .then(data => {
-        setCategories(data);
+        // Filtrar solo la categoría "Cuidado Facial"
+        const facialCareCategory = data.find(category => category.name === "Cuidado capilar");
+        if (facialCareCategory) {
+          setCategories([facialCareCategory]); // Solo agregamos la categoría Cuidado Facial
+        }
+
         const initialVisibleProducts = {};
-        data.forEach(category => {
-          initialVisibleProducts[category.name] = 100;
-        });
+        if (facialCareCategory) {
+          initialVisibleProducts[facialCareCategory.name] = 50;
+        }
         setVisibleProducts(initialVisibleProducts);
       })
       .catch(error => console.error('Error fetching categories:', error));
@@ -81,4 +85,3 @@ const CardsR = () => {
 };
 
 export default CardsR;
-
