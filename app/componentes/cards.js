@@ -18,7 +18,7 @@ const Cards = () => {
                                 src="https://i.pinimg.com/564x/24/44/12/24441235c6f236b3e3be58a5d75abf59.jpg"
                                 alt="Person with a game controller in hand"
                             />
-                            <figcaption className="figcaption">Bolsos Exssethia </figcaption>
+                            <figcaption className="figcaption">Bolsos Lumina </figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card2">
@@ -28,7 +28,7 @@ const Cards = () => {
                                 src="https://i.pinimg.com/564x/11/03/1d/11031d1c25cc6fd3c72485b6cafb6293.jpg"
                                  alt="Person with curly hair in neon lighting"
                             />
-                            <figcaption className="figcaption">Perfumeria Exssethia</figcaption>
+                            <figcaption className="figcaption">Perfumeria Lumina</figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card3">
@@ -38,7 +38,7 @@ const Cards = () => {
                                 src="https://i.pinimg.com/564x/26/49/8e/26498e85d51e982bfe2fcaa9ab0c63e1.jpg"
                                 alt="Person in vibrant neon lighting with abstract shapes"
                             />
-                            <figcaption className="figcaption">Ropa Exssenthia</figcaption>
+                            <figcaption className="figcaption">Ropa Lumina</figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card4">

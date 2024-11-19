@@ -2,6 +2,7 @@
 import Homes from "../app/componentes/home"
 import Menu from "../app/componentes/header"
 import Footer from "../app/componentes/footer"
+import Carrucel from "./componentes/carrucel"
 export default function Home() {
   return (
     <div>
@@ -9,6 +10,7 @@ export default function Home() {
       <Menu />
       </div>
       <div>
+        
       <Homes />
       </div>
       <div  className="footer">

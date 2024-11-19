@@ -7,6 +7,10 @@ import Carrucel from "../componentes/carrucel"
 import CardProduct from "../componentes/CardProduct"
 import VideoP from "../componentes/videoP"
 import SearchBar from "../componentes/SearchBar"
+import Banner from "../componentes/banner"
+
+
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,26 +31,29 @@ export default function Home() {
  
      
     <div className='container'>
-
+      
+      <Banner />
     <div className='main'>
-    <div className="main1">
+    
+    <div className="main1A">
+      
      <div className="content">
     <div className="text-section">
    
-      <h1 className="title">Exsetia</h1>
+      <h1 className="title">Lumina</h1>
       <p className="description">
-      Exclusividad al alcance, diseño con identidad.  </p>
+      La belleza que ilumina tu esencia, el cuidado que tu piel merece.  </p>
     </div>
-
-   
 
 
     <div className="image-section">
-      <img src="https://i.pinimg.com/originals/65/86/43/658643a0c319dea11fcaa3a18339be0e.gif" alt="Ecommerce" />
+      <img src="https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif" alt="Ecommerce" />
     </div>
   </div>
+  
     </div>
-    
+  
+
     <div className="main2">
     <Cards />
     </div>
@@ -54,13 +61,13 @@ export default function Home() {
  
   
    
-
-    <div className="main3">
-    <CardProduct />
-    </div>
     <div className="main1">
     <Carrucel />
     </div>
+    <div className="main3">
+    <CardProduct />
+    </div>
+   
   
    
     <div className="main1">

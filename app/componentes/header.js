@@ -53,19 +53,19 @@ export default function Header() {
     <header className="header">
       <div className="logo-container" onClick={handleLogoClick}>
         <img src="https://i.pinimg.com/564x/60/fe/1f/60fe1fea1ce51ea908460990f0cda709.jpg" alt="Logo" className="logo" />
-        <h1 className="title2">Exsetia</h1>
+        <h1 className="title2">Lumina</h1>
       </div>
       <div className="inputSearsh">
         <SearchBar />
       </div>
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul className="nav-list">
-          <button className="view-more-btn" onClick={handleViewMore}>Todo</button>
+          <button className="nav-item3" onClick={handleViewMore}>Todo</button>
           {/* Redirige a un producto específico dentro de Cuidado Capilar */}
-          <li><button onClick={() => router.push('/capilar/1')} className="nav-item">Cuidado capilar</button></li>
-          <li><button onClick={() => router.push('/maquillaje/1')} className="nav-item">Maquillaje</button></li>
-          <li><button onClick={() => router.push('/facial/1')} className="nav-item">Cuidado facial</button></li>
-          <li><button onClick={() => router.push('/perfumeria/1')} className="nav-item">Perfumería</button></li>
+          <li><button onClick={() => router.push('/capilar/1')} className="nav-item2">Cuidado capilar</button></li>
+          <li><button onClick={() => router.push('/maquillaje/1')} className="nav-item3">Maquillaje</button></li>
+          <li><button onClick={() => router.push('/facial/1')} className="nav-item3">Cuidado facial</button></li>
+          <li><button onClick={() => router.push('/perfumeria/1')} className="nav-item3">Perfumería</button></li>
           <button className="register-button" onClick={toggleLoginPopup}>Contáctenos</button>
           <LoginPopup isOpen={isLoginOpen} onClose={toggleLoginPopup} />
         </ul>

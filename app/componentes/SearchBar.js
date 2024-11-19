@@ -1,11 +1,11 @@
-"use client";  // Marca este componente como un Client Component
+"use client"; // Marca este componente como un Client Component
 
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import "../style/SearchBar.css";
 
 const SearchInput = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
 
@@ -14,10 +14,10 @@ const SearchInput = () => {
   useEffect(() => {
     const fetchSearchResults = async () => {
       if (searchTerm.length > 2) {
-        const response = await fetch('/categories.json');
+        const response = await fetch("/categories.json");
         const data = await response.json();
-        const allProducts = data.flatMap(category => category.products);
-        const results = allProducts.filter(product => 
+        const allProducts = data.flatMap((category) => category.products);
+        const results = allProducts.filter((product) =>
           product.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setSearchResults(results);
@@ -42,7 +42,7 @@ const SearchInput = () => {
   };
 
   return (
-    <div id="search-box" className="search-box expanded"> {/* Siempre tiene la clase "expanded" */}
+    <div id="search-box" className="search-box expanded">
       {/* El input siempre está visible */}
       <input
         id="search-input-box"
@@ -53,17 +53,25 @@ const SearchInput = () => {
         placeholder="Buscar producto"
         className="search-input-boxx"
       />
-      
+
       {/* Mostramos los resultados solo cuando hay resultados de búsqueda y el input está enfocado */}
       {isFocused && searchResults.length > 0 && (
         <ul id="search-results-list" className="search-results-list">
           {searchResults.map((result) => (
             <li key={result.id} className="search-result-item">
-              <button 
+              <button
                 onClick={() => handleProductClick(result.id)}
                 className="search-result-button"
               >
-                {result.name} - {result.price}
+                <img
+                  src={result.image}
+                  alt={result.name}
+                  className="search-result-image"
+                />
+                <div className="search-result-details">
+                  <span className="search-result-name">{result.name}</span>
+                  <span className="search-result-price">{result.price}</span>
+                </div>
               </button>
             </li>
           ))}

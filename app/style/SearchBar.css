@@ -4,7 +4,8 @@
   display: flex;
   align-items: start;
   height: 40px;
-  background-color: rgb(0, 0, 0); 
+  background-color: srgb(254, 254, 254); 
+  width: 50px;
  
  
 }
@@ -20,10 +21,10 @@
 /* Ocultar el input inicialmente */
 #search-input-box {
   display: none;
-  width: 100%;
+  width: 90%;
   transition: width 0.3s ease;
   padding: 10px;
-  font-size: 16px;
+  font-size: 11px;
   border: none;               /* Elimina el borde predeterminado */
   border-bottom: 2px solid white; /* Línea blanca debajo del input */
   border-radius: 0;           /* Asegúrate de que solo tenga la línea inferior */
@@ -36,15 +37,15 @@
 .search-box.expanded #search-input-box {
   display: block;
   position: relative;
-  background-color: black;
-  width: 35%;
+  background-color:transparentS;
+  width: 28%;
   height: 20px; /* Expande el input al 100% del contenedor */
   padding-left: 35px; /* Ajusta el padding para que el input no cubra la lupa */
 }
 
 /* Resultados de búsqueda */
 .search-results-list {
-  width: 50%;
+  width: 100%;
   position: relative;
   top: 45px;
   left: -170px;
@@ -69,6 +70,7 @@
   text-align: left;
   font-size: 14px;
   padding: 8px;
+  transition: 0.4s;
   border: none;
   background: black; /* Fondo negro para cada resultado */
   cursor: pointer;
@@ -77,6 +79,74 @@
 }
 
 .search-result-button:hover {
-  background-color: #333; /* Color de fondo al hacer hover */
-  color: #0070f3; /* Color azul para el texto al hacer hover */
+  transition: 0.4s;
+  background-color: #b1b1b1; /* Color de fondo al hacer hover */
+  color: #2d2d2d; /* Color azul para el texto al hacer hover */
 }
+
+@media (max-width: 700px) {
+  .search-results-list {
+    width: 50%;
+    position: relative;
+    top: 45px;
+    left: -200px;
+    right: 0;
+    max-height: 900px;
+    overflow-y: auto;
+    background-color: #000 !important; /* Fondo negro para los resultados */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+  }
+}
+/* Contenedor del resultado */
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border-bottom: 1px solid #444;
+}
+
+.search-result-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  padding: 8px;
+  border: none;
+  background: black; /* Fondo negro para cada resultado */
+  cursor: pointer;
+  color: #fff; /* Color blanco para el texto */
+  border-bottom: 1px solid #444; /* Línea divisoria más oscura */
+}
+
+/* Estilo de la imagen */
+.search-result-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+/* Contenedor de los detalles (nombre y precio) */
+.search-result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.search-result-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-result-price {
+  font-size: 14px;
+  color: #aaa;
+}
+

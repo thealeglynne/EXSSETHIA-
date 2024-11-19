@@ -21,26 +21,32 @@
 
 body{
  
-  background-color: aqua;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(251, 251, 251);
+    background-color: rgb(29, 29, 29);
     overflow: hidden;
     background-position: center top -15vh;;
 
    background-size: 90%; /* Ajusta este valor para cambiar el tamaño de la imagen */
   }
-  .header{
-    left: -0px;
-    width: 100%;
-    height: 10vh;
-    
-    background-color: rgba(0, 0, 0, 1);
-    position: fixed;
-   
-    z-index: 10;
-}
+  .header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 10px;
+    left: 0; /* Asegura que esté completamente alineado a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 7vh; /* Altura del header */
+    background-color: transparents(0, 0, 0, 0.6); /* Fondo negro con opacidad para transparencia */
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    display: flex; /* Ideal para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia el contenido uniformemente */
+    padding: 0 20px; /* Espaciado interno en los lados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto flotante */
+  }
