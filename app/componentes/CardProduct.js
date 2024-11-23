@@ -49,8 +49,8 @@ const CardsR = () => {
   return (
     <div>
       <div className="sort-controls">
-        <button onClick={() => setSortOrder('name')}>Ordenar por Nombre</button>
-        <button onClick={() => setSortOrder('price')}>Ordenar por Precio</button>
+        <button  onClick={() => setSortOrder('name')}>Ordenar por Nombre</button>
+        <button  onClick={() => setSortOrder('price')}>Ordenar por Precio</button>
       </div>
 
       {categories.map((category) => (
@@ -62,8 +62,8 @@ const CardsR = () => {
                 <img src={product.image} alt={product.name} className="product-image" />
                 <div className='infoCard'>
                   <h3>{product.name}</h3>
-                  <p>{product.description}</p>
-                  <p>{product.price}</p>
+                  <p>{product.description},{product.price}</p>
+                 
                   <button className="add-to-cart-btn">Carrito</button>
                   <button className="view-more-btn" onClick={() => handleViewMore(product.id)}>Ver más</button>
                 </div>

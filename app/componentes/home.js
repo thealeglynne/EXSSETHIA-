@@ -50,35 +50,28 @@ export default function Home() {
       <img src="https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif" alt="Ecommerce" />
     </div>
   </div>
-  
     </div>
-  
-
+    
+    
     <div className="main2">
     <Cards />
     </div>
    
  
-  
+    <div className="main2G">
+        
+        </div>
    
-    <div className="main1">
-    <Carrucel />
-    </div>
+   
     <div className="main3">
     <CardProduct />
     </div>
    
-  
+    <div className="main1">
+    <Carrucel />
+    </div>
    
-    <div className="main1">
-      <h1>hola mundo</h1>
-    </div>
-    <div className="main1">
-      <h1>hola mundo</h1>
-    </div>
-    <div className="main1">
-      <h1>hola mundo</h1>
-    </div>
+   
     </div>
     </div>
 

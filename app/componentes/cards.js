@@ -15,40 +15,40 @@ const Cards = () => {
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/564x/24/44/12/24441235c6f236b3e3be58a5d75abf59.jpg"
+                                src="https://i.pinimg.com/474x/a4/31/2a/a4312a54a939b2bb908e2d9975e1712c.jpg"
                                 alt="Person with a game controller in hand"
                             />
-                            <figcaption className="figcaption">Bolsos Lumina </figcaption>
+                            <figcaption className="figcaption">¿quienes somos? </figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card2">
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/564x/11/03/1d/11031d1c25cc6fd3c72485b6cafb6293.jpg"
+                                src="https://i.pinimg.com/474x/3c/dd/49/3cdd498bbfbf54cdccb4114b88f11b5e.jpg"
                                  alt="Person with curly hair in neon lighting"
                             />
-                            <figcaption className="figcaption">Perfumeria Lumina</figcaption>
+                            <figcaption className="figcaption">Atencion al cliente</figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card3">
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/564x/26/49/8e/26498e85d51e982bfe2fcaa9ab0c63e1.jpg"
+                                src="https://i.pinimg.com/736x/ad/6e/05/ad6e052f967f5e2ca0a72a9314cc049e.jpg"
                                 alt="Person in vibrant neon lighting with abstract shapes"
                             />
-                            <figcaption className="figcaption">Ropa Lumina</figcaption>
+                            <figcaption className="figcaption">Servicios</figcaption>
                         </figure>
                     </a>
                     <a href="#" className="card card4">
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/564x/bc/21/6f/bc216f545736e63e0bc843dd05e9b97e.jpg"
+                                src="https://i.pinimg.com/736x/2e/73/29/2e73292a110a03e36e699ec559f2bc59.jpg"
                                 alt="Person wearing a virtual reality headset in a blue-lit room"
                             />
-                            <figcaption className="figcaption">Servicios</figcaption>
+                            <figcaption className="figcaption">Blog Lumina</figcaption>
                         </figure>
                     </a>
                 </div>

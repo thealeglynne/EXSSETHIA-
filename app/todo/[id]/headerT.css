@@ -21,19 +21,19 @@
   /* Eliminar backdrop-filter para pruebas */
   /* backdrop-filter: blur(7px); */
 }
-.nav-list .home-button-item {
-    margin-top: 10px; /* Ajusta el espaciado si es necesario */
-  }
-  
-  .nav-list .home-button {
-    width: 100%; /* Hace que el botón ocupe todo el ancho del menú si lo deseas */
-    padding: 10px;
-    background-color: #007bff; /* Cambia el color de fondo si es necesario */
-    color: white; /* Cambia el color del texto si es necesario */
-    border: none;
-    cursor: pointer;
-  }
-  
+.home-button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #f0f0f0;
+}
 
 .main1 {
   scroll-snap-align: start;

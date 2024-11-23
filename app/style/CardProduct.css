@@ -10,15 +10,19 @@
     position: relative;
     top: 110px;
     left: 20%;
-    padding: 10px;
-    z-index: 100;
+    padding: 40px;
+    z-index: 0;
+    
   }
   
   .sort-controls button {
     background-color: #6d6b6b;
     color: white;
     border: none;
+    width: 20vh;
+    height: 5vh;
     border-radius: 5px;
+    font-size: 10px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
@@ -27,7 +31,7 @@
   
   .sort-controls button:hover {
     background-color: #ffffff;
-    color: #666;
+    color: #000000;
   }
   
   /* Contenedor de categoría */
@@ -53,27 +57,32 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
     gap: 20px;
+    padding: 30px;
   }
   
   /* Estilo para las tarjetas individuales */
   .cardR {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    background-color: rgba(255, 255, 255, 0.503); /* Fondo blanco con un poco de transparencia */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px transparencia(0, 0, 0, 0.1);
+    width: 37vh;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px; /* Reducir padding para tarjetas más pequeñas */
+    padding: 12px; /* Reducir padding para tarjetas más pequeñas */
     text-align: center;
     height: auto; /* Ajuste automático de altura */
-    max-height: 450px; /* Altura mínima para tarjetas */
+    max-height: 400px; /* Altura mínima para tarjetas */
   }
   .infoCard{
+    width: 100%;
     position: relative;
-   top: -80px;
-    background-color: rgba(255, 255, 255, 0.721);
+   top: 0%;
+   height: 2000px;
+    background-color: rgba(31, 31, 31, 0.412);
+    color: white;
   }
   
   /* Efecto hover para tarjetas */
@@ -85,33 +94,32 @@
   /* Imagen del producto */
   .product-image {
     width: 100%;
-    height: 300px; /* Ajusta la altura deseada */
+    border-radius: 6px;
+    height: 250px; /* Ajusta la altura deseada */
     object-fit: cover; /* Cubre el contenedor manteniendo el ratio */
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
-  }
-  
-  .product-image:hover {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para el zoom y el filtro */
+    filter: brightness(40%) opacity(1); /* Imagen oscura por defecto */
+}
+
+/* Efecto hover para la imagen */
+.product-image:hover {
     transform: scale(1.1); /* Efecto de zoom en la imagen al pasar el mouse */
-  }
-  
+    filter: brightness(100%) opacity(1); /* Imagen en su color original al hacer hover */
+}
   /* Contenedor de la información del producto */
-  .card-info {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
-    padding: 10px;
-    border-radius: 5px;
-  }
+ 
   
   /* Nombre del producto */
   .cardR h3 {
     font-size: 0.4em; /* Tamaño de fuente ajustado */
     margin: 10px 0;
-    color: #333;
+    color: #ffffff;
   }
   
   /* Descripción del producto */
   .cardR p {
-    font-size: 0.4em; /* Tamaño de fuente ajustado */
-    color: #666;
+    font-size: 0.35em; /* Tamaño de fuente ajustado */
+    color: #dcdcdc;
     margin: 10px 0;
     flex: 1; /* Permite que el texto ocupe el espacio restante */
   }

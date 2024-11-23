@@ -50,3 +50,19 @@ body{
     padding: 0 20px; /* Espaciado interno en los lados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto flotante */
   }
+  .headerCategori {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 60px;
+    left: 0; /* Asegura que esté completamente alineado a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 7vh; /* Altura del header */
+    background-color: transparents(0, 0, 0, 0.6); /* Fondo negro con opacidad para transparencia */
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    display: flex; /* Ideal para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espacia el contenido uniformemente */
+    padding: 0 20px; /* Espaciado interno en los lados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto flotante */
+  }
