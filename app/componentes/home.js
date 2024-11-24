@@ -40,7 +40,7 @@ export default function Home() {
      <div className="content">
     <div className="text-section">
    
-      <h1 className="title">Lumina</h1>
+      <h1 id='titleH' className="titleH">Lumina</h1>
       <p className="description">
       La belleza que ilumina tu esencia, el cuidado que tu piel merece.  </p>
     </div>
@@ -50,27 +50,31 @@ export default function Home() {
       <img src="https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif" alt="Ecommerce" />
     </div>
   </div>
-    </div>
-    
-    
+ </div>
+
+
     <div className="main2">
     <Cards />
     </div>
    
- 
-    <div className="main2G">
-        
-        </div>
-   
-   
+    <div id='main2g' className="main2g">
+          
+     </div>
+  
     <div className="main3">
     <CardProduct />
     </div>
    
     <div className="main1">
-    <Carrucel />
-    </div>
-   
+  <video autoPlay loop muted playsInline className="background-video" controls={false}>
+    <source src="/path-to-your-video.mp4" type="video/mp4" />
+    Tu navegador no soporta el elemento de video.
+  </video>
+  <div className="content">
+    <h1>Bienvenido a Lumina</h1>
+    <p>Descubre lo mejor en cuidado corporal.</p>
+  </div>
+</div>
    
     </div>
     </div>

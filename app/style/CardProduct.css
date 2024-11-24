@@ -1,5 +1,19 @@
 /* CardProduct.css */
+@font-face {
+  font-family: 'MyFont';
+  src: url('/public//fonts/akira_expanded/Akira\ Expanded\ Demo.otf') format('woff2'),
+       url('/public//fonts//akira_expanded/Akira\ Expanded\ Demo.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'MyFont2';
+  src: url('/public/fonts/garet/Garet-Book.otf') format('woff2'),
+       url('/public/fonts/garet/Garet-Book.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Contenedor de los controles de ordenamiento */
 .sort-controls {
     display: flex;
@@ -8,16 +22,16 @@
     margin-bottom: 20px;
     width: 100%;
     position: relative;
-    top: 110px;
-    left: 20%;
+    top: 20px;
+    left: 0%;
     padding: 40px;
     z-index: 0;
     
   }
   
   .sort-controls button {
-    background-color: #6d6b6b;
-    color: white;
+    background-color: #9f9e9e;
+    color: rgb(0, 0, 0);
     border: none;
     width: 20vh;
     height: 5vh;
@@ -30,13 +44,13 @@
   }
   
   .sort-controls button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #f1f1f1;
   }
   
   /* Contenedor de categoría */
   .categoryR {
-    margin: 40px 20px;
+    margin: 60px 10px;
 
   }
   
@@ -56,10 +70,35 @@
   .cardsR {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
-    gap: 20px;
+    gap: 10px;
     padding: 30px;
+    position: relative;
+    top: -50px;
+  }
+  .header-section {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    top:50px;
+    position: relative;
+   
   }
   
+  .header-section h1 {
+    font-size: 1.5rem;
+    color: #b7b7b7;
+    margin-bottom: 10px;
+    font-family: "MyFont";
+   
+  }
+  
+  .header-section p {
+    font-family: "MyFont2";
+    font-size: 0.9rem;
+    color: #b9b9b9;
+    line-height: 1.5;
+    font-size: ;
+  }
   /* Estilo para las tarjetas individuales */
   .cardR {
     background-color: rgba(255, 255, 255, 0.503); /* Fondo blanco con un poco de transparencia */
@@ -71,7 +110,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 12px; /* Reducir padding para tarjetas más pequeñas */
+    padding: 0px; /* Reducir padding para tarjetas más pequeñas */
     text-align: center;
     height: auto; /* Ajuste automático de altura */
     max-height: 400px; /* Altura mínima para tarjetas */
@@ -94,8 +133,8 @@
   /* Imagen del producto */
   .product-image {
     width: 100%;
-    border-radius: 6px;
-    height: 250px; /* Ajusta la altura deseada */
+    border-radius: 0px;
+    height: 275px; /* Ajusta la altura deseada */
     object-fit: cover; /* Cubre el contenedor manteniendo el ratio */
     transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para el zoom y el filtro */
     filter: brightness(40%) opacity(1); /* Imagen oscura por defecto */
@@ -118,6 +157,7 @@
   
   /* Descripción del producto */
   .cardR p {
+    font-family: "MyFont2";
     font-size: 0.35em; /* Tamaño de fuente ajustado */
     color: #dcdcdc;
     margin: 10px 0;
@@ -136,7 +176,20 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 10px 10px;
+   
     width: 40%;
+  }
+  #view-more-btnG{
+    position: relative;
+    top:-65px;
+    background-color: #5f5f5f;
+    color: #ffffff;
+    transition: 1s;
+  }
+  #view-more-btnG:hover{
+    background-color: #ffffff;
+    transition: 1s;
+    color: #000000;
   }
   
   /* Estilo hover para botones */
