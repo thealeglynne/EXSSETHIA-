@@ -1,7 +1,8 @@
 [
   
   {
-    "name": "Cuidado capilar",
+
+    "name": "Pelo",
     "products": [
       { "id": 1, "name": "mascarilla matizante CANASILVER", "price": "$3", "description": "Elimina reflejos amarillos, aporta brillo platinado", "image": "https://i.pinimg.com/736x/9e/c0/7d/9ec07d8e0f846ba6affeef685b33d69f.jpg", "category": "Cuidado capilar" },
       { "id": 2, "name": "mascarilla matizante RUBIO PALO DE ROSA", "price": "$3", "description": "Protege e intensifica reflejos rosa pastel.", "image": "https://i.pinimg.com/736x/cb/3d/07/cb3d073ab05dbdeafd9198279ff13660.jpg", "category": "Cuidado capilar" },
@@ -50,6 +51,7 @@
   }
   ,
   {
+
     "name": "Skincare",
     "products": [
       { "id": 39, "name": "Mascara hidratante de miel BIOAQUA", "price": "$1", "description": "Humecta y suaviza la piel facial", "image": "https://i.pinimg.com/736x/b8/b4/3d/b8b43d32ff39405a6ddba6b7bb1253a2.jpg", "category": "Skincare" },
@@ -73,10 +75,5 @@
   }
   
   
-      
-          
-      
-      
-      
         
 ]

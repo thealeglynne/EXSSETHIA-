@@ -1,16 +1,49 @@
-.videoContainer {
-  position: fixed; /* El video se mantiene fijo en la pantalla */
-  top: 0;
-  left: 0;
-  width: 100vw; /* 100% del ancho de la ventana */
-  height: 100vh; /* 100% de la altura de la ventana */
-  z-index: -1; /* Coloca el video detrás del contenido */
-  overflow: hidden;
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
+  overflow: hidden; /* Asegura que nada se desborde */
 }
 
-.video {
-  width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
-  height: 100%; /* Asegura que el iframe ocupe toda la altura del contenedor */
-  border: none; /* Elimina los bordes del iframe */
-  /* Hace que el video cubra toda el área sin distorsionarse */
+.video-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.video-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.video-subtitle {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 440px) {
+  .video-container {
+    height: 100vh; /* Asegura que el video ocupe toda la pantalla */
+  }
+
+  .video-title {
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
+  }
+
+  .video-subtitle {
+    font-size: 1rem;
+  }
 }

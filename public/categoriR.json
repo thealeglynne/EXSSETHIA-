@@ -1,0 +1,76 @@
+[
+    {
+
+    "name": "Gorras",
+    "products": [
+      { "id": 55, "name": "Gorra camuflada", "description": "Perfecta para un estilo casual", "price": "$11", "image": "/images/gorra_camuflada.jpg" },
+      { "id": 56, "name": "Gorra snapback", "description": "El accesorio perfecto para cualquier edad", "price": "$10", "image": "/images/gorra_snapback.jpg" },
+      { "id": 57, "name": "Gorra beige", "description": "Ligera y fácil de combinar", "price": "$8", "image": "/images/gorra_beige.jpg" },
+      { "id": 58, "name": "Gorra de algodón", "description": "Suavidad y estilo en uno", "price": "$9", "image": "/images/gorra_algodon.jpg" },
+      { "id": 59, "name": "Gorra azul claro", "description": "Un tono fresco y moderno", "price": "$8", "image": "/images/gorra_azul_claro.jpg" },
+      { "id": 60, "name": "Gorra con logo", "description": "Muestra tu marca favorita", "price": "$12", "image": "/images/gorra_logo.jpg" },
+      { "id": 61, "name": "Gorra de lana", "description": "Ideal para días fríos", "price": "$15", "image": "/images/gorra_lana.jpg" },
+      { "id": 62, "name": "Gorra verde oliva", "description": "Estilo natural y relajado", "price": "$9", "image": "/images/gorra_oliva.jpg" },
+      { "id": 63, "name": "Gorra naranja brillante", "description": "Un toque de energía para tu outfit", "price": "$10", "image": "/images/gorra_naranja.jpg" },
+      { "id": 64, "name": "Gorra negra con bordado", "description": "Diseño sofisticado y moderno", "price": "$13", "image": "/images/gorra_negra_bordada.jpg" },
+      { "id": 65, "name": "Gorra gris con visera curva", "description": "Comodidad y estilo clásico", "price": "$11", "image": "/images/gorra_gris_visera.jpg" },
+      { "id": 66, "name": "Gorra con estampado tropical", "description": "Siente el verano todo el año", "price": "$12", "image": "/images/gorra_tropical.jpg" },
+      { "id": 67, "name": "Gorra blanca premium", "description": "Elegancia en cada detalle", "price": "$14", "image": "/images/gorra_blanca_premium.jpg" },
+      { "id": 68, "name": "Gorra azul petróleo", "description": "Un color que resalta", "price": "$9", "image": "/images/gorra_petroleo.jpg" },
+      { "id": 69, "name": "Gorra con franjas deportivas", "description": "Ideal para actividades intensas", "price": "$10", "image": "/images/gorra_deportiva.jpg" },
+      { "id": 70, "name": "Gorra tipo pescador", "description": "Explora la naturaleza con estilo", "price": "$12", "image": "/images/gorra_pescador.jpg" },
+      { "id": 71, "name": "Gorra café claro", "description": "Perfecta para días relajados", "price": "$8", "image": "/images/gorra_cafe.jpg" },
+      { "id": 72, "name": "Gorra negra con detalles dorados", "description": "Luce elegante y exclusivo", "price": "$15", "image": "/images/gorra_negra_dorada.jpg" }
+    ]
+  },
+  {
+
+    "name": "Pantalones",
+    "products": [
+      { "id": 73, "name": "Jeans ajustados", "description": "Estilo moderno y comodidad", "price": "$25", "image": "/images/jeans_ajustados.jpg" },
+      { "id": 74, "name": "Pantalón de mezclilla clásico", "description": "Un básico para cualquier ocasión", "price": "$22", "image": "/images/pantalon_mezclilla.jpg" },
+      { "id": 75, "name": "Joggers deportivos", "description": "Ideales para entrenar o relajarse", "price": "$20", "image": "/images/joggers.jpg" },
+      { "id": 76, "name": "Pantalón cargo verde", "description": "Práctico y lleno de estilo", "price": "$28", "image": "/images/pantalon_cargo.jpg" },
+      { "id": 77, "name": "Pantalón chino beige", "description": "Perfecto para un look casual", "price": "$30", "image": "/images/pantalon_chino.jpg" },
+      { "id": 78, "name": "Pantalón negro formal", "description": "Elegancia para cualquier evento", "price": "$35", "image": "/images/pantalon_formal_negro.jpg" },
+      { "id": 79, "name": "Pantalón de lino blanco", "description": "Ligero y fresco para el verano", "price": "$32", "image": "/images/pantalon_lino.jpg" },
+      { "id": 80, "name": "Pantalón de franela", "description": "Confort y estilo para el invierno", "price": "$40", "image": "/images/pantalon_franela.jpg" },
+      { "id": 81, "name": "Pantalón azul marino", "description": "Versátil para cualquier ocasión", "price": "$29", "image": "/images/pantalon_azul_marino.jpg" },
+      { "id": 82, "name": "Pantalón slim fit gris", "description": "Un toque moderno para tu guardarropa", "price": "$26", "image": "/images/pantalon_slim_gris.jpg" },
+      { "id": 83, "name": "Pantalón jogger beige", "description": "Comodidad con un diseño único", "price": "$24", "image": "/images/pantalon_jogger_beige.jpg" },
+      { "id": 84, "name": "Pantalón corto casual", "description": "Estilo relajado para días cálidos", "price": "$18", "image": "/images/pantalon_corto.jpg" },
+      { "id": 85, "name": "Pantalón con rayas laterales", "description": "Un look deportivo y casual", "price": "$22", "image": "/images/pantalon_rayas.jpg" },
+      { "id": 86, "name": "Pantalón acampanado", "description": "Revive el estilo retro", "price": "$30", "image": "/images/pantalon_acampanado.jpg" },
+      { "id": 87, "name": "Pantalón de cuero sintético", "description": "Audaz y elegante", "price": "$45", "image": "/images/pantalon_cuero.jpg" },
+      { "id": 88, "name": "Pantalón gris con bolsillos", "description": "Práctico y versátil para el día a día", "price": "$27", "image": "/images/pantalon_bolsillos.jpg" },
+      { "id": 89, "name": "Pantalón de algodón", "description": "Suavidad y estilo para todo el día", "price": "$23", "image": "/images/pantalon_algodon.jpg" },
+      { "id": 90, "name": "Pantalón plisado", "description": "Sofisticación en cada detalle", "price": "$38", "image": "/images/pantalon_plisado.jpg" }
+    ]
+  }
+  ,
+  {
+
+    "name": "Camisas",
+    "products": [
+      { "id": 91, "name": "Camisa blanca clásica", "description": "Un básico infaltable para cualquier ocasión", "price": "$20", "image": "/images/camisa_blanca.jpg" },
+      { "id": 92, "name": "Camisa de lino beige", "description": "Ligera y elegante para el verano", "price": "$25", "image": "/images/camisa_lino.jpg" },
+      { "id": 93, "name": "Camisa a cuadros", "description": "Estilo casual y moderno", "price": "$18", "image": "/images/camisa_cuadros.jpg" },
+      { "id": 94, "name": "Camisa azul marino", "description": "Versátil y fácil de combinar", "price": "$22", "image": "/images/camisa_azul_marino.jpg" },
+      { "id": 95, "name": "Camisa de rayas", "description": "Un look profesional y sofisticado", "price": "$24", "image": "/images/camisa_rayas.jpg" },
+      { "id": 96, "name": "Camisa de manga corta", "description": "Comodidad para días cálidos", "price": "$16", "image": "/images/camisa_manga_corta.jpg" },
+      { "id": 97, "name": "Camisa negra ajustada", "description": "Estilo urbano con un toque moderno", "price": "$23", "image": "/images/camisa_negra.jpg" },
+      { "id": 98, "name": "Camisa con estampado floral", "description": "Fresca y vibrante para el verano", "price": "$21", "image": "/images/camisa_floral.jpg" },
+      { "id": 99, "name": "Camisa de mezclilla", "description": "Casual y con un toque clásico", "price": "$19", "image": "/images/camisa_mezclilla.jpg" },
+      { "id": 100, "name": "Camisa slim fit gris", "description": "Perfecta para un look moderno", "price": "$26", "image": "/images/camisa_slim_fit.jpg" },
+      { "id": 101, "name": "Camisa de franela", "description": "Confort y estilo en días fríos", "price": "$22", "image": "/images/camisa_franela.jpg" },
+      { "id": 102, "name": "Camisa verde oliva", "description": "Un tono natural y relajado", "price": "$20", "image": "/images/camisa_verde_oliva.jpg" },
+      { "id": 103, "name": "Camisa de algodón", "description": "Suavidad y comodidad para todo el día", "price": "$19", "image": "/images/camisa_algodon.jpg" },
+      { "id": 104, "name": "Camisa bordada", "description": "Detalles que destacan", "price": "$28", "image": "/images/camisa_bordada.jpg" },
+      { "id": 105, "name": "Camisa beige con bolsillo", "description": "Práctica y elegante para cualquier ocasión", "price": "$21", "image": "/images/camisa_beige.jpg" },
+      { "id": 106, "name": "Camisa estilo polo", "description": "Un clásico atemporal", "price": "$18", "image": "/images/camisa_polo.jpg" },
+      { "id": 107, "name": "Camisa estampada tropical", "description": "Ideal para vacaciones y días soleados", "price": "$20", "image": "/images/camisa_tropical.jpg" },
+      { "id": 108, "name": "Camisa formal gris", "description": "Imprescindible para el trabajo o eventos", "price": "$30", "image": "/images/camisa_formal_gris.jpg" }
+    ]
+  }     
+        
+]

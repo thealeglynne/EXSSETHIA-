@@ -53,7 +53,7 @@ export default function Header() {
     <header className="header">
       <div className="logo-container" onClick={handleLogoClick}>
         <img src="https://i.pinimg.com/564x/60/fe/1f/60fe1fea1ce51ea908460990f0cda709.jpg" alt="Logo" className="logo" />
-        <h1 className="title2">Lumina</h1>
+        <h1 className="title2">marlis lopez</h1>
       </div>
       <div className="inputSearsh">
         <SearchBar />

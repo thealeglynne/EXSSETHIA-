@@ -97,7 +97,7 @@
     font-size: 0.9rem;
     color: #b9b9b9;
     line-height: 1.5;
-    font-size: ;
+
   }
   /* Estilo para las tarjetas individuales */
   .cardR {
@@ -179,12 +179,19 @@
    
     width: 40%;
   }
-  #view-more-btnG{
-    position: relative;
-    top:-65px;
-    background-color: #5f5f5f;
-    color: #ffffff;
-    transition: 1s;
+  #view-more-btng {
+    background-color: #060606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 10px;
+   position: relative;
+   top: -50px;
+    width: 40%;
   }
   #view-more-btnG:hover{
     background-color: #ffffff;
@@ -201,7 +208,48 @@
   /* Adaptación responsiva */
   @media (max-width: 1200px) {
     .cardsR {
+      left: 5%;
+
       grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+    .header-section {
+      text-align: center;
+      margin-bottom: 20px;
+      
+      top:70px;
+      position: relative;
+     
+    }
+    
+    .header-section h1 {
+      font-size: 1.2rem;
+      color: #b7b7b7;
+      margin-bottom: 10px;
+      font-family: "MyFont";
+     
+    }
+    #view-more-btng {
+      background-color: #060606;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 0.6rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px 10px;
+     position: relative;
+     top: -70px;
+     left: 30%;
+      width: 40%;
+    }
+    
+    .header-section p {
+      font-family: "MyFont2";
+      font-size: 0.9rem;
+      color: #b9b9b9;
+      line-height: 1.5;
+  
     }
   }
   
@@ -223,16 +271,63 @@
   }
   
   @media (max-width: 768px) {
+  
+
     .cardsR {
-      grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+      gap: 10px;
+      padding: 30px;
+      position: relative;
+      top: -30px;
+      left: 30%;
+      grid-template-columns: 1fr; 
     }
   
     .product-image {
-      height: 120px; /* Ajustar altura de imagen en pantallas pequeñas */
+      height: 65%; /* Ajustar altura de imagen en pantallas pequeñas */
     }
-    .sort-controls {
-        display: none;
+    .header-section {
+      text-align: center;
+      margin-bottom: 20px;
+      
+      top:70px;
+      position: relative;
+     
     }
+    
+    .header-section h1 {
+      font-size: 0.8rem;
+      color: #b7b7b7;
+      margin-bottom: 10px;
+      font-family: "MyFont";
+     
+
+    }
+    #view-more-btng {
+      background-color: #060606;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 0.6rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px 10px;
+     position: relative;
+     top: -60px;
+      width: 40%;
+      left: 32%;
+    }
+    
+    .header-section p {
+      font-family: "MyFont2";
+      font-size: 0.75rem;
+      color: #b9b9b9;
+      line-height: 1.5;
+  
+    }
+   
     .categoryR h2 {
         font-size: 1.3em;
         margin-bottom: 20px;
@@ -243,6 +338,19 @@
     
         width: 500px;
     
+      }
+      .sort-controls {
+        display: flex;
+        font-size: 0.1rem;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 60%;
+        position: relative;
+        top: 20px;
+        left: 20%;
+        padding: 40px;
+        z-index: 0;
+        
       }
   }
   
@@ -267,5 +375,90 @@
   /* Transiciones suaves */
   .cardR {
     transition: all 0.3s ease;
+  }
+  @media (max-width: 440px) {
+    .cardsR {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Mostrar 2 columnas en pantallas de 440px o menos */
+      gap: 10px; /* Espacio entre las tarjetas */
+      padding: 30px;
+      position: relative;
+      height: 700px;
+      top: -30px;
+      left: 0; /* Ajustar posición para centrar en pantallas pequeñas */
+    }
+  
+    .header-section {
+      text-align: center;
+      margin-bottom: 20px;
+      top: 80px;
+      position: relative;
+    }
+  
+    .header-section h1 {
+      font-size: 0.7rem; /* Ajustar tamaño de la fuente */
+      color: #b7b7b7;
+      margin-bottom: 10px;
+      font-family: "MyFont";
+    }
+  
+    .header-section p {
+      font-size: 0.7rem; /* Ajustar tamaño de la fuente */
+      
+    }
+    .cardR {
+      width: 100%; /* Hacer las tarjetas más anchas en pantallas pequeñas */
+      max-height: none; /* No limitar la altura */
+    }
+  
+    #product-image {
+      height: 140px; /* Ajustar la altura de la imagen en pantallas pequeñas */
+    }
+  
+    .sort-controls {
+      display: flex;
+      font-size: 0.1rem;
+      justify-content: center;
+      margin-bottom: 20px;
+      width: 80%; /* Ajustar el ancho del contenedor de los controles */
+      position: relative;
+      top: 40px;
+      left: 10%;
+      padding: 40px;
+      z-index: 0;
+    }
+  
+    .sort-controls button {
+      background-color: #9f9e9e;
+      color: rgb(0, 0, 0);
+      border: none;
+      width: 40%; /* Ajustar el tamaño de los botones */
+      height: 5vh;
+      border-radius: 5px;
+      font-size: 10px;
+      padding: 10px 20px;
+      margin: 0 5px; /* Reducir el margen */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .sort-controls button:hover {
+      background-color: #000000;
+      color: #f1f1f1;
+    }
+  
+    .add-to-cart-btn,
+    .view-more-btn {
+      width: 80%; /* Hacer que los botones ocupen todo el ancho */
+      font-size: 0.7rem; /* Ajustar tamaño de los botones */
+    }
+    .cardR h3 {
+      font-size: 0.4em; /* Tamaño de fuente ajustado */
+      margin: 10px 0;
+      color: #ffffff;
+    }
+    .cardR p {
+      font-size: 0.4em; /* Reducir tamaño de texto en pantallas pequeñas */
+    }
   }
   

@@ -151,17 +151,18 @@
 
 .menu-icon {
   width: 25px;
-  height: 2px;
+  height: 3px;
   background-color: white;
-  margin: 3px 0;
+  margin: 2px 0;
   z-index: 78881111;
   position: relative;
-  top: -10px;
+  top: -5px;
+ 
 }
 
 .inputSearsh {
   position: relative;
-  left: 24%;
+  left: 30%;
   top: 0px;
   transition: 1s;
   background-color: transparent;
@@ -234,7 +235,7 @@
 
     .inputSearsh {
       position: relative;
-      left: 4%;
+      left: 6%;
       top: 0px;
       transition: 1s;
     }
@@ -247,7 +248,7 @@
   z-index: 78881111;
   position: relative;
   top: -10px;
-  left: -30px;
+  left: -20px;
   transition: 1s;
 }
 
@@ -281,7 +282,7 @@
 
     .inputSearsh {
       position: relative;
-      left: -45%;
+      left: -25%;
       top: 0px;
       transition: 1s;
     }
@@ -294,20 +295,49 @@
   z-index: 78881111;
   position: relative;
   top: -10px;
-  left: -240px;
+  left: -220px;
   transition: 1s;
 }
 
 .logo {
-display: none;
+  
+  display: none;
 }
 
 .title2 {
-  font-size: 15px;
-  font-weight: 100;
-  font-family: 'MyFont';
+font-size: 0.7rem;
+}
+
+  }
+  @media (max-width: 440px) {
+ 
+
+    .inputSearsh {
+      position: relative;
+      left: -48%;
+      top: 0px;
+      transition: 1s;
+    }
+
+.menu-icon {
+  width: 30px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  z-index: 78881111;
   position: relative;
   top: -10px;
+  left: -300px;
+  transition: 1s;
+}
+
+.logo {
+  
+  display: none;
+}
+
+.title2 {
+font-size: 0.7rem;
 }
 
   }

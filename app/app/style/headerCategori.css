@@ -1,0 +1,85 @@
+.header-unique {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  .header-content-unique {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .logo-container-unique {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .logo-unique {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .title-unique {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .nav-unique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-item-unique {
+    font-size: 1rem;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-itemH2-unique:hover {
+    color: #000;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  /* Estilos específicos para cada categoría */
+  .nav-itemH2-todo {
+    color: #007BFF; /* Azul */
+  }
+  
+  .nav-itemH2-capilar {
+    color: #28A745; /* Verde */
+  }
+  
+  .nav-itemH2-maquillaje {
+    color: #FFC107; /* Amarillo */
+  }
+  
+  .nav-itemH2-facial {
+    color: #DC3545; /* Rojo */
+  }
+  
+  .nav-itemH2-perfumeria {
+    color: #6F42C1; /* Púrpura */
+  }
+  
+  @media (max-width: 900px) {
+    .header-unique {
+      display: none; /* Oculta el header en pantallas menores a 900px */
+    }
+  }
+  

@@ -1,0 +1,83 @@
+/* Contenedor del input y del ícono */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: start;
+    height: 40px;
+    background-color: rgb(0, 0, 0); 
+   
+   
+  }
+  
+  #search-box {
+    position: relative;
+    left: 50%;
+    width: 600px;
+  }
+  
+  
+  
+  /* Ocultar el input inicialmente */
+  #search-input-box {
+    display: none;
+    width: 100%;
+    transition: width 0.3s ease;
+    padding: 10px;
+    font-size: 16px;
+    border: none;               /* Elimina el borde predeterminado */
+    border-bottom: 2px solid white; /* Línea blanca debajo del input */
+    border-radius: 0;           /* Asegúrate de que solo tenga la línea inferior */
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent; /* Fondo transparente para que se integre mejor */
+    color: white;                /* Color de texto blanco */
+  }
+  
+  .search-box.expanded #search-input-box {
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 35%;
+    height: 20px; /* Expande el input al 100% del contenedor */
+    padding-left: 35px; /* Ajusta el padding para que el input no cubra la lupa */
+  }
+  
+  /* Resultados de búsqueda */
+  .search-results-list {
+    width: 50%;
+    position: relative;
+    top: 45px;
+    left: -170px;
+    right: 0;
+    max-height: 900px;
+    overflow-y: auto;
+    background-color: #000 !important; /* Fondo negro para los resultados */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+  }
+  
+  /* Estilo de cada ítem de resultado */
+  .search-result-item {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .search-result-button {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    background: black; /* Fondo negro para cada resultado */
+    cursor: pointer;
+    color: #fff; /* Color blanco para el texto */
+    border-bottom: 1px solid #444; /* Línea divisoria más oscura */
+  }
+  
+  .search-result-button:hover {
+    background-color: #333; /* Color de fondo al hacer hover */
+    color: #0070f3; /* Color azul para el texto al hacer hover */
+  }
+  

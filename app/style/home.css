@@ -1,33 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*
-@font-face {
-  font-family: 'MyFont2';
-  src: url('/APP//public//fonts/garet/Garet-Book.ttf') format('woff2'),
-       url('/APP//public//fonts/garet/Garet-Book.ttf') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-*/
-@font-face {
-  font-family: 'MyFont';
-  src: url('/public//fonts/akira_expanded/Akira\ Expanded\ Demo.otf') format('woff2'),
-       url('/public//fonts//akira_expanded/Akira\ Expanded\ Demo.otf') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MyFont2';
-  src: url('/public/fonts/garet/Garet-Book.otf') format('woff2'),
-       url('/public/fonts/garet/Garet-Book.otf') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 .container {
   scroll-snap-type: y mandatory;
@@ -37,18 +10,13 @@
   overflow-x: hidden;
   margin-top: 10px;
   transition: 1s;
-  /* Eliminar backdrop-filter para pruebas */
-  /* backdrop-filter: blur(7px); */
 }
 
-.main1 {
+#mainV {
+  scroll-snap-align: start;
   position: relative;
   width: 100%;
-  height: 100vh; /* La sección ocupa toda la altura visible de la pantalla */
-  overflow: hidden; /* Oculta cualquier parte del video fuera del contenedor */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
 
 .background-video {
@@ -57,16 +25,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
-  pointer-events: none; /* Evita cualquier interacción del usuario con el video */
-  z-index: -1; /* Coloca el video detrás del contenido */
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .content {
   position: relative;
-  color: #fff; /* Texto blanco para contraste */
+  color: #fff;
   text-align: center;
-  z-index: 1; /* Mantiene el contenido por encima del video */
+  z-index: 1;
 }
 
 .content h1 {
@@ -78,21 +46,18 @@
   font-size: 1.2rem;
 }
 
-
- .carrusel {
+.carrusel {
   scroll-snap-align: start;
   width: 100%;
   height: 90vh;
   display: flex;
-
   justify-content: center;
   align-items: center;
   background-color: rgb(250, 250, 250);
   transition: 1s;
   z-index: -1;
   position: relative;
-
-  overflow-x: hidden; /* Asegura que la imagen se adapte correctamente */
+  overflow-x: hidden;
 }
 
 .main1A {
@@ -103,12 +68,17 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(29, 29, 29);
+  background-image: url('https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif');
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: 1s;
   z-index: 1;
   position: relative;
-  top:100px;
-  overflow: hidden; /* Asegura que la imagen se adapte correctamente */
+  top: 100px;
+  overflow: hidden;
 }
+
 .main1B {
   scroll-snap-align: start;
   width: 100%;
@@ -120,35 +90,32 @@
   transition: 1s;
   z-index: 1;
   position: relative;
-  top:20px;
-  overflow: hidden; /* Asegura que la imagen se adapte correctamente */
+  top: 20px;
+  overflow: hidden;
 }
 
-/* style/home.css */
-/* home.css */
 .full-image {
   position: relative;
-  top:90px;
+  top: 90px;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin deformarse */
+  object-fit: cover;
 }
 
-
-
-.main2{
+.main2 {
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   color: black;
   background-color: rgb(29, 29, 29);
-z-index: -10;
-transition: 1s;
+  z-index: -10;
+  transition: 1s;
 }
+
 #main2g {
   scroll-snap-align: start;
   width: 100%;
@@ -160,12 +127,58 @@ transition: 1s;
   color: white;
   text-align: center;
   position: relative;
+  background-image: url('../img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px; /* Aumentamos el padding-top para desplazar la sección hacia abajo */
+}
 
-  /* Imagen de fondo */
-  background-image: url('../img/1.jpg'); /* Cambia esto por tu imagen */
-  background-size: cover; /* La imagen cubrirá todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita repeticiones */
+@media (max-width: 1168px) {
+  #main2g {
+    font-size: 1.8rem;
+    height: 90vh; /* Ajuste de altura para pantallas medianas */
+    padding-top: 0px; /* Mantener el padding-top aumentado */
+  }
+}
+
+@media (max-width: 1068px) {
+  #main2g {
+    font-size: 1.6rem;
+    height: 70vh; /* Ajuste de altura para pantallas pequeñas */
+    padding-top: 100px; /* Mantener el padding-top aumentado */
+  }
+}
+
+@media (max-width: 1000px) {
+  #main2g {
+    font-size: 1.4rem;
+    height: 70vh; /* Ajuste de altura para dispositivos móviles */
+    padding-top: 100px; /* Mantener el padding-top aumentado */
+  }
+}
+
+@media (max-width: 968px) {
+  #main2g {
+    font-size: 1.2rem;
+    height: 70vh; /* Más ajuste de altura en pantallas más pequeñas */
+    padding-top: 100px; /* Mantener el padding-top aumentado */
+  }
+}
+
+@media (max-width: 768px) {
+  #main2g {
+    font-size: 1rem;
+    height: 50vh; /* Asegurando que se vea bien en dispositivos muy pequeños */
+    padding-top: 100px; /* Mantener el padding-top aumentado */
+  }
+}
+@media (max-width: 708px) {
+  #main2g {
+    font-size: 1rem;
+    height: 70vh; /* Asegurando que se vea bien en dispositivos muy pequeños */
+    padding-top: 100px; /* Mantener el padding-top aumentado */
+  }
 }
 
 .background-video {
@@ -174,17 +187,17 @@ transition: 1s;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
-  z-index: -1; /* Coloca el video detrás del contenido */
+  object-fit: cover;
+  z-index: -1;
 }
 
 .overlay-text {
   position: relative;
-  z-index: 1; /* Asegura que el texto esté sobre el video */
+  z-index: 1;
   text-align: center;
   color: white;
   font-family: Arial, sans-serif;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* Añade sombra para mejor legibilidad */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .overlay-text h1 {
@@ -197,34 +210,34 @@ transition: 1s;
   margin-top: 0;
 }
 
-
-
-.main31{
+.main31 {
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   color: black;
   background-color: rgb(251, 251, 251);
-z-index: -10;
-transition: 1s;
+  z-index: -10;
+  transition: 1s;
 }
-.main3{
+
+.main3 {
   scroll-snap-align: start;
   width: 100%;
- min-height: 100vh;
-    display: flex;
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: black;
   background-color: rgb(29, 29, 29);
-z-index: -10;
-transition: 1s;
+  z-index: -10;
+  transition: 1s;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -243,54 +256,105 @@ transition: 1s;
   justify-content: center;
   padding-right: 20px;
   transition: 1s;
+  position: relative;
+  left: 5%;
 }
 
-#titleH      {
-  font-size: 7rem;
+#Title {
   font-weight: bold;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
   line-height: 1;
-  transition: 1s;
   font-family: 'MyFont';
-  z-index: 2000000s;
- 
+  font-size: 6rem;
+  width: 1000px;
+  z-index: 2000000;
+}
+
+#description {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  font-family: 'MyFont2', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
 }
 
 .description {
-  font-size: 1.9srem;
-  color: rgb(193, 193, 193);
-  transition: 2s;
-  font-family: 'MyFont2',;
+  position: relative;
+  left: 0%;
+  font-size: 2.5rem; /* Ajusta el tamaño de la fuente al 4% del ancho de la pantalla */
+  font-family: 'MyFont2'; /* Asegúrate de reemplazar 'MyFont2' por el nombre de la fuente que estás usando */
   font-weight: 100;
-
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: center; /* Centra el texto, si es necesario */
+  margin: 0 auto; /* Centra la descripción dentro de su contenedor */
 }
 
-.image-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
+/* Media Queries para ajustar el tamaño en diferentes tamaños de pantalla */
+@media (max-width: 1168px) {
+  #Title {
+    font-size: 3rem;
+    width: 800px;
+  }
 
+  .main1A {
+    background-size: 70%;
+  }
+
+  #text-section {
+    padding-right: 20px;
+  }
+
+  #description {
+    font-size: 1.3rem; /* Aumenta el tamaño en pantallas más pequeñas */
+  }
 }
 
+@media (max-width: 1068px) {
+  #Title {
+    font-size: 2.7rem;
+    width: 700px;
+  }
 
-.image-section img {
-  max-width:100%;
-  height: auto;
-  transition: 1s;
-  
+  #text-section {
+    left: 0%;
+  }
 
+  #description {
+    font-size: 1.3rem; /* Ajusta más para pantallas medianas */
+  }
+}
+
+@media (max-width: 1000px) {
+  #Title {
+    font-size: 2.7rem;
+  }
+
+  .text-section {
+    left: 0%;
+  }
+
+  #description {
+    font-size: 1.3rem; /* Sigue ajustando en pantallas más pequeñas */
+  }
 }
 
 @media (max-width: 968px) {
-  .title {
-    font-size: 4rem;
-
+  #Title {
+    font-size: 3rem;
   }
- 
+
+  .text-section {
+    left: 0;
+  }
+
+  #description {
+    font-size: 1.2rem;
+  }
 }
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column-reverse;
@@ -300,24 +364,91 @@ transition: 1s;
   .text-section {
     padding-right: 0;
     padding-top: 20px;
- 
   }
 
-  .title {
+  #Title {
     font-size: 2.5rem;
   }
 
-  .description {
-    font-size: 1.2rem;
-    font-family: 'MyFont2';
+  #description {
+    font-size: 1rem;
+    width: 400px;
   }
+
   .image-section img {
     max-width: 100%;
     height: auto;
     position: relative;
     top: 10vh;
   }
+  .main1A {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    background-image: url('https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+  }
 }
+
+@media (max-width: 440px) {
+  .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-right: 0;
+    padding-top: 20px;
+    position: relative;
+    top: 30%;
+  }
+
+  #Title {
+    font-size: 2.2rem;
+  }
+
+  #description {
+    font-size: 0.8rem;
+    width: 400px;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 10vh;
+  }
+  .main1A {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    background-image: url('https://i.pinimg.com/originals/3b/f3/7d/3bf37d79a9fa9e7b3cff9c0551314989.gif');
+    background-size: 140%;
+    background-position: center 130px;
+    background-repeat: no-repeat;
+    transition: 1s;
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+  }
+}
+
 .carrusel {
   width: 100%;
   height: 100%;
@@ -337,5 +468,5 @@ transition: 1s;
 .carrusel img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio del contenedor */
+  object-fit: cover;
 }

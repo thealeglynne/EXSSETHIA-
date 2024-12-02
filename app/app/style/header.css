@@ -1,0 +1,313 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
+  z-index: 5000000;
+  
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: -10px;
+}
+
+.title2 {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'MyFont';
+  position: relative;
+  top: -10px;
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.73); /* Fondo semitransparente */
+   /* Aplica el efecto de desenfoque al fondo */
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 100%;
+  border-radius: 5px;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+  text-align: center;
+   /* Asegura que el nav se superponga a otros elementos */
+}
+
+.nav.show {
+  display: flex;
+  backdrop-filter: blur(10px);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  backdrop-filter: blur(10px);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  text-align: center;
+  background: transparent;
+
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  cursor: pointer;
+  width: 50vw; /* Ocupa el ancho completo */
+  box-sizing: border-box; /* Evita desbordes */
+}
+
+/* Efecto hover */
+.nav-item:hover {
+  background-color: white; /* Cambia el fondo */
+  color: black; /* Cambia el color del texto */
+  transform: scale(1.1); /* Efecto de zoom */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Sombra */
+}
+.nav-item2 {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 10px 15px;
+  text-align: center;
+  background: transparent;
+
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  cursor: pointer;
+  width: 20vw; /* Ocupa el ancho completo */
+  box-sizing: border-box; /* Evita desbordes */
+}
+
+/* Efecto hover */
+.nav-item2:hover {
+  background-color: white; /* Cambia el fondo */
+  color: black; /* Cambia el color del texto */
+  transform: scale(1.1); /* Efecto de zoom */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Sombra */
+}
+.nav-item3 {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 10px 15px;
+  text-align: center;
+  background: transparent;
+
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  cursor: pointer;
+  width: 20vw; /* Ocupa el ancho completo */
+  box-sizing: border-box; /* Evita desbordes */
+}
+
+/* Efecto hover */
+.nav-item3:hover {
+  background-color: white; /* Cambia el fondo */
+  color: black; /* Cambia el color del texto */
+  transform: scale(1.1); /* Efecto de zoom */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Sombra */
+}
+
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 3px 0;
+  z-index: 78881111;
+  position: relative;
+  top: -10px;
+}
+
+.inputSearsh {
+  position: relative;
+  left: 24%;
+  top: 0px;
+  transition: 1s;
+  background-color: transparent;
+}
+
+.register-button {
+  background-color: #ffffff;
+  color: rgb(57, 57, 57);
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 30vw; /* Ocupa el ancho completo */
+  box-sizing: border-box; /* Evita desbordes */
+}
+
+.register-button:hover {
+  background-color: #5c5c5c; /* Cambia el color del fondo */
+  color: aliceblue; /* Cambia el color del texto */
+  transform: scale(1.1); /* Efecto de zoom */
+  box-shadow: 0 4px 15px rgba(94, 94, 94, 0.3); /* Sombra */
+}
+
+/* Estilos para menú desplegable en todas las pantallas */
+@media (max-width: 1300px) {
+  .nav {
+    display: none;
+  }
+  .inputSearsh {
+    position: relative;
+    left: 18%;
+    top: 0px;
+    transition: 1s;
+  
+  }
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+@media (max-width: 1000px) {
+ 
+
+    .inputSearsh {
+      position: relative;
+      left: 9%;
+      top: 0px;
+      transition: 1s;
+    }
+  }
+  @media (max-width: 800px) {
+ 
+
+    .inputSearsh {
+      position: relative;
+      left: 4%;
+      top: 0px;
+      transition: 1s;
+    }
+
+.menu-icon {
+  width: 30px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  z-index: 78881111;
+  position: relative;
+  top: -10px;
+  left: -30px;
+  transition: 1s;
+}
+
+  }
+
+  @media (max-width: 700px) {
+ 
+
+    .inputSearsh {
+      position: relative;
+      left: -10%;
+      top: 0px;
+      transition: 1s;
+    }
+
+.menu-icon {
+  width: 30px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  z-index: 78881111;
+  position: relative;
+  top: -10px;
+  left: -120px;
+  transition: 1s;
+}
+
+  }
+  @media (max-width: 600px) {
+ 
+
+    .inputSearsh {
+      position: relative;
+      left: -45%;
+      top: 0px;
+      transition: 1s;
+    }
+
+.menu-icon {
+  width: 30px;
+  height: 2.5px;
+  background-color: white;
+  margin: 4px 0;
+  z-index: 78881111;
+  position: relative;
+  top: -10px;
+  left: -240px;
+  transition: 1s;
+}
+
+.logo {
+display: none;
+}
+
+.title2 {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'MyFont';
+  position: relative;
+  top: -10px;
+}
+
+  }

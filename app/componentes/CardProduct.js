@@ -1,77 +1,82 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Hook para navegación
+import { useRouter } from "next/navigation";
 import "../style/CardProduct.css";
 
 const CardsR = () => {
-  const [categories, setCategories] = useState([]); // Categorías con productos
-  const [visibleCount, setVisibleCount] = useState(4); // Número de productos visibles
-  const [selectedCategory, setSelectedCategory] = useState("all"); // Categoría seleccionada
-  const router = useRouter(); // Inicializar el router
+  const [categories, setCategories] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(4); // Mostrar inicialmente 4 productos
+  const [selectedCategory, setSelectedCategory] = useState(""); // Inicialmente vacío
+  const router = useRouter();
 
   useEffect(() => {
     // Fetch de las categorías
     fetch("/categories.json")
       .then((response) => response.json())
-      .then((data) => setCategories(data))
+      .then((data) => {
+        setCategories(data);
+        // Seleccionar la primera categoría automáticamente
+        if (data.length > 0) {
+          setSelectedCategory(data[0].name);
+        }
+      })
       .catch((error) => console.error("Error fetching categories:", error));
   }, []);
 
-  // Obtener productos según la categoría seleccionada
+  // Filtrar las categorías visibles inicialmente (máximo 3 para botones)
+  const filteredCategories = categories.slice(0, 3);
+
   const getFilteredProducts = () => {
     if (selectedCategory === "all") {
-      return categories.flatMap((category) => category.products);
+      // Mostrar productos de todas las categorías filtradas
+      return filteredCategories.flatMap((category) => category.products);
     }
-    const category = categories.find((cat) => cat.name === selectedCategory);
+
+    // Filtrar productos según la categoría seleccionada
+    const category = filteredCategories.find((cat) => cat.name === selectedCategory);
     return category ? category.products : [];
   };
 
-  const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 8); // Mostrar más productos
-  };
-
-  const handleViewMore = (productId) => {
-    router.push(`/product/${productId}`); // Navegar al producto específico
-  };
-
-  // Productos filtrados
   const filteredProducts = getFilteredProducts();
 
   return (
     <div>
-      {/* Título y descripción */}
       <div className="header-section">
-        <h1>Nuestrtos Productos</h1>
-        <p>Explora una amplia gama de productos diseñados para resaltar tu belleza y cuidado personal.</p>
+        <h1>Nuestros Productos de cuidado corporal</h1>
+        <p>Explora nuestra gama de productos para el cuidado personal y belleza.</p>
       </div>
-
-      {/* Botones de categorías */}
       <div className="sort-controls">
-        <button onClick={() => setSelectedCategory("all")}>Todos</button>
-        {categories.map((category) => (
+        {/* Botones para seleccionar las categorías */}
+        {filteredCategories.map((category) => (
           <button
             key={category.name}
+            className={selectedCategory === category.name ? "active" : ""}
             onClick={() => setSelectedCategory(category.name)}
           >
             {category.name}
           </button>
         ))}
+        <button
+          className={selectedCategory === "all" ? "active" : ""}
+          onClick={() => setSelectedCategory("all")}
+        >
+          Todos
+        </button>
       </div>
 
-      {/* Productos */}
       <div className="cardsR">
+        {/* Mostrar los productos filtrados */}
         {filteredProducts.slice(0, visibleCount).map((product) => (
           <div key={product.id} className="cardR">
-            <img src={product.image} alt={product.name} className="product-image" />
+            <img src={product.image} alt={product.name} id="product-image" className="product-image" />
             <div className="infoCard">
               <h3>{product.name}</h3>
               <p>
                 {product.description}, {product.price}
               </p>
-              <button className="add-to-cart-btn">Carrito</button>
               <button
                 className="view-more-btn"
-                onClick={() => handleViewMore(product.id)}
+                onClick={() => router.push(`/product/${product.id}`)}
               >
                 Ver más
               </button>
@@ -80,13 +85,9 @@ const CardsR = () => {
         ))}
       </div>
 
-      {/* Botón "Ver más" */}
+      {/* Botón "Ver más" si hay más productos */}
       {visibleCount < filteredProducts.length && (
-        <button
-          id="view-more-btnG"
-          className="view-more-btn"
-          onClick={handleShowMore}
-        >
+        <button onClick={() => setVisibleCount((prev) => prev + 8)} id="view-more-btng" className="view-more-btn">
           Ver más
         </button>
       )}

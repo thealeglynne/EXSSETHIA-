@@ -15,7 +15,7 @@ const Cards = () => {
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/474x/a4/31/2a/a4312a54a939b2bb908e2d9975e1712c.jpg"
+                                src="https://i.pinimg.com/474x/46/71/4b/46714b71b30d8e55ce811b6ab8d033a7.jpg"
                                 alt="Person with a game controller in hand"
                             />
                             <figcaption className="figcaption">¿quienes somos? </figcaption>
@@ -25,7 +25,7 @@ const Cards = () => {
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/474x/3c/dd/49/3cdd498bbfbf54cdccb4114b88f11b5e.jpg"
+                                src="https://i.pinimg.com/736x/90/7a/0b/907a0bf58f18c9ec1b86179ae6ea34c9.jpg"
                                  alt="Person with curly hair in neon lighting"
                             />
                             <figcaption className="figcaption">Atencion al cliente</figcaption>
@@ -35,7 +35,7 @@ const Cards = () => {
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/736x/ad/6e/05/ad6e052f967f5e2ca0a72a9314cc049e.jpg"
+                                src="https://i.pinimg.com/736x/eb/0c/7c/eb0c7cc0f78abc390b86c3dc48dc4345.jpg"
                                 alt="Person in vibrant neon lighting with abstract shapes"
                             />
                             <figcaption className="figcaption">Servicios</figcaption>
@@ -45,7 +45,7 @@ const Cards = () => {
                         <figure className="visual">
                             <img
                                 className="cardImg"
-                                src="https://i.pinimg.com/736x/2e/73/29/2e73292a110a03e36e699ec559f2bc59.jpg"
+                                src="https://i.pinimg.com/474x/04/8c/92/048c92015ce7bc3f094181066728dcae.jpg"
                                 alt="Person wearing a virtual reality headset in a blue-lit room"
                             />
                             <figcaption className="figcaption">Blog Lumina</figcaption>

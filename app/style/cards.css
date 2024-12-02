@@ -227,3 +227,24 @@
         display: none; /* Oculta los elementos */
     }
 }
+@media (max-width: 440px) {
+    .Titulo
+    {
+        display:block; /* Oculta los elementos */
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+        gap: 0.5rem; /* Espacio más pequeño entre las tarjetas */
+    }
+
+    .card {
+        min-height: 180px; /* Reduce la altura mínima de las tarjetas */
+        max-height: 340px; /* Limita la altura máxima de las tarjetas */
+        margin: 5px; /* Reduce el margen */
+    }
+
+    .visual {
+        aspect-ratio: 1 / 1; /* Establece una relación de aspecto cuadrada para las imágenes */
+    }
+}

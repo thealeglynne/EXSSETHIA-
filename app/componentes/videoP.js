@@ -1,18 +1,22 @@
-import React from 'react';
-import '../style/videoP.css'; // Importa el archivo CSS
+import React from "react";
+import "../style/videoP.css"; // Asegúrate de incluir estilos personalizados
 
-const LoopingVideo = () => {
+const VideoP = () => {
   return (
-    <div className="video">
-        <iframe
-          className="video"
-          src="https://www.youtube.com/embed/9f7Usujg6ms?autoplay=1&mute=1&loop=1&playlist=9f7Usujg6ms"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-        ></iframe>
+    <div className="video-container">
+      <div className="video-overlay">
+        <h1 className="video-title">Bienvenidos a Lumina</h1>
+        <p className="video-subtitle">Descubre la belleza que te hace única.</p>
       </div>
+      <video
+        className="video-frame"
+        src="/video/BEA.mp4"
+        autoPlay
+        loop
+        muted
+      ></video>
+    </div>
   );
 };
 
-export default LoopingVideo;
+export default VideoP;
